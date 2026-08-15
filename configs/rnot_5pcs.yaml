@@ -1,0 +1,42 @@
+app:
+  title: "Feynman's Ballistic Computer v3 — 5-PCS √NOT demo"
+  host: "127.0.0.1"
+  port: 8050
+  debug: false
+
+physics:
+  hbar: 1.0
+  coupling: 1.0
+  cursor_sites: 5
+  answer_initial: 0
+  completion_site: 2
+  # Preserve the original two-step √NOT computation, then add two identity
+  # clock sites as output/padding sites.  Therefore PCS 2, 3, and 4 all
+  # represent a completed NOT operation on the Answer bit.
+  gates:
+    - sqrt_not
+    - sqrt_not
+    - identity
+    - identity
+
+ui:
+  # v3 retains the reduced render rate introduced in v2.  Physical time is still
+  # computed from wall time, so this changes UI load rather than the physics.
+  interval_ms: 120
+  initial_speed: 1.0
+  max_speed: 3.0
+  initial_evolution_mode: "unobserved"
+  initial_measurement_interval: 0.75
+  min_measurement_interval: 0.15
+  max_measurement_interval: 3.0
+  max_measurements_per_tick: 20
+  measurement_history_length: 24
+
+diagnostics:
+  enabled: true
+  t_start: 0.0
+  t_end: 18.0
+  num_points: 361
+
+random:
+  seed: 20260815
