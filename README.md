@@ -1,6 +1,6 @@
-# Feynman's Ballistic Computer v3 — interactive 5-PCS demo
+# Feynman's Ballistic Computer — interactive 5-PCS demo
 
-高校生向けに、Feynman の ballistic computer / Feynman clock をインタラクティブに可視化する Python + Dash デモの v3 です。
+Feynman の ballistic computer / Feynman clock をインタラクティブに可視化する Python + Dash デモ (ver3) です。
 
 
 ## v3 の変更点

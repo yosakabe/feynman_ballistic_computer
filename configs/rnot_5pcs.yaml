@@ -1,5 +1,5 @@
 app:
-  title: "Feynman's Ballistic Computer v3 — 5-PCS √NOT demo"
+  title: "Feynman's Ballistic Computer — 5-PCS √NOT demo"
   host: "127.0.0.1"
   port: 8050
   debug: false

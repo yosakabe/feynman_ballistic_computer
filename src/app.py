@@ -15,7 +15,7 @@ from visualization import conditional_answer_rows, make_bloch_figure, make_pcs_f
 
 
 def parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description="Interactive Feynman ballistic-computer demo v3")
+    parser = argparse.ArgumentParser(description="Interactive Feynman ballistic-computer demo")
     parser.add_argument("--config", default="configs/rnot_5pcs.yaml", help="YAML config path")
     parser.add_argument("--output-dir", default="output", help="Root directory for timestamped output")
     parser.add_argument("--host", default=None)
